@@ -18,6 +18,25 @@ nav {
   text-align: center;
 }
 
+#main {
+  border-top: 1px solid #E9E5ED;
+}
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    font-family: sans-serif;
+    font-size: 110%;
+    width: 50%;
+    border: 1px solid #E9E5ED;
+    border-radius: 2%;
+}
+
+textarea:focus {
+  outline: 1px solid #008CBA;
+}
 
 #button {
     background-color: #008CBA;
@@ -32,9 +51,46 @@ nav {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     position: relative;
-    margin-top: 2%;
+    margin-top: 4%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#button:focus {
+  outline: 0;
 }
 
 #button:hover {
   background-color: hsl(200, 68%, 36%)
+}
+
+#button:active {
+  background-color: hsla(202, 57%, 25%, 1)
+}
+
+#output h1 {
+  font-size: 120%;
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 4%;
+  margin-left: -2%;
+  padding: 3%;
+  width: 100%;
+  color: black;
+}
+
+#result {
+  font-size: 150%;
+  font-family: sans-serif;
+  font-weight: lighter;
+  background-color: black;
+  color: white;
+  /*display: block;*/
+  text-align: center;
+  margin-left: -5%;
+  margin-right: -5%;
+  margin-top: -1%;
+  padding: 5%;
 }

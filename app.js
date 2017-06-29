@@ -1,28 +1,27 @@
-// document.write("hi hi hi hi hi");
-
-
-
-
 // Wait for the page to load first
   window.onload = function() {
 
-    //Get a reference to the link on the page
+    // Get a reference to the link on the page
     // with an id of "mylink"
-    var a = document.getElementById("button");
+    var a = document.getElementById('button');
 
-    //Set code to run when the link is clicked
+    // Set code to run when the link is clicked
     // by assigning a function to "onclick"
     a.onclick = function() {
 
-      // Your code here...
-      alert("hi");
-      //If you don't want the link to actually
-      // redirect the browser to another page,
-      // "google.com" in our example here, then
-      // return false at the end of this block.
-      // Note that this also prevents event bubbling,
-      // which is probably what we want here, but won't
-      // always be the case.
+      // Gets user input
+      var text = document.getElementById('input').value;
+
+      // Splits into array
+      var text_array = text.split('\n');
+
+      // Iterates through array and chooses random list item
+
+      // Writes array to result div
+      document.getElementById('result').innerHTML = text_array;
+
+      // Apparently some sort of best practice?
+      return false;
 
     }
   }

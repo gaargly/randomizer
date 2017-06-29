@@ -32,6 +32,7 @@ textarea {
     width: 50%;
     border: 1px solid #E9E5ED;
     border-radius: 2%;
+    resize: none;
 }
 
 textarea:focus {
@@ -87,7 +88,6 @@ textarea:focus {
   font-weight: lighter;
   background-color: black;
   color: white;
-  /*display: block;*/
   text-align: center;
   margin-left: -5%;
   margin-right: -5%;

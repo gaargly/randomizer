@@ -16,9 +16,10 @@
       var text_array = text.split('\n');
 
       // Iterates through array and chooses random list item
+      var choice = text_array[Math.floor(Math.random()*text_array.length)];
 
       // Writes array to result div
-      document.getElementById('result').innerHTML = text_array;
+      document.getElementById('result').innerHTML = choice;
 
       // Apparently some sort of best practice?
       return false;

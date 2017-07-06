@@ -117,14 +117,10 @@ textarea:focus {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     border-radius: 3%;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
     position: relative;
     margin-top: 4%;
-    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -141,7 +137,10 @@ textarea:focus {
   background-color: #164215;
 }
 
+.show {
+  display: block;
+}
+
 .hide {
-  display: none;
-  background-color: red;
+  visibility: hidden;
 }

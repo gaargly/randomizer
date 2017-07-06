@@ -28,10 +28,11 @@
 
     /* Timer */
     var start = document.getElementById('start');
-    start.classList.add("hide");
+
 
     start.onclick = function() {
       this.classList.add("hide");
+
       var timeoutHandle;
       function countdown(minutes) {
           var seconds = 60;

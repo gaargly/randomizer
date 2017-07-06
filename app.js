@@ -5,9 +5,33 @@
     // with an id of "mylink"
     var randomize = document.getElementById('randomize');
 
+
+
     // Set code to run when the link is clicked
     // by assigning a function to "onclick"
     randomize.onclick = function() {
+
+      //hides input box and randomize button
+
+      document.getElementById('nav').classList.remove("show");
+      document.getElementById('nav').classList.add("hide");
+
+
+      document.getElementById('user_input').classList.remove("show");
+      document.getElementById('user_input').classList.add("hide");
+
+      document.getElementById('randomize').classList.remove("show");
+      document.getElementById('randomize').classList.add("hide");
+
+      //shows other magical stuff beneath start button i.e. progressive disclosure
+      document.getElementById('message').classList.remove("hide");
+      document.getElementById('message').classList.add("show");
+
+      document.getElementById('start').classList.remove("hide");
+      document.getElementById('start').classList.add("show");
+
+      document.getElementById('timer').classList.remove("hide");
+      document.getElementById('timer').classList.add("show");
 
       // Gets user input
       var text = document.getElementById('input').value;
@@ -29,10 +53,11 @@
     /* Timer */
     var start = document.getElementById('start');
 
-
+    //hides start button
     start.onclick = function() {
       this.classList.add("hide");
 
+    //begins 25 minute countdown
       var timeoutHandle;
       function countdown(minutes) {
           var seconds = 60;
@@ -57,6 +82,7 @@
           }
           tick();
       }
+      //holds countdown in minutes, currently hardcoded to 25 to adhere to pomodoro best practice
       countdown(25);
     }
 

@@ -47,8 +47,6 @@ textarea:focus {
     display: inline-block;
     font-size: 16px;
     border-radius: 3%;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
     position: relative;
     margin-top: 4%;
     display: block;
@@ -96,7 +94,6 @@ textarea:focus {
 
 
 /* Timer */
-
 
 #message {
   margin-top: 2%;

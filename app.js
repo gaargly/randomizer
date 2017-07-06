@@ -14,14 +14,14 @@
       //hides input box and randomize button
 
       document.getElementById('nav').classList.remove("show");
-      document.getElementById('nav').classList.add("hide");
+      document.getElementById('nav').classList.add("remove");
 
 
       document.getElementById('user_input').classList.remove("show");
-      document.getElementById('user_input').classList.add("hide");
+      document.getElementById('user_input').classList.add("remove");
 
       document.getElementById('randomize').classList.remove("show");
-      document.getElementById('randomize').classList.add("hide");
+      document.getElementById('randomize').classList.add("remove");
 
       //shows other magical stuff beneath start button i.e. progressive disclosure
       document.getElementById('message').classList.remove("hide");

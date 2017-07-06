@@ -18,7 +18,7 @@ nav {
   text-align: center;
 }
 
-#main {
+#user_input {
   border-top: 1px solid #E9E5ED;
 }
 
@@ -44,12 +44,10 @@ textarea:focus {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     border-radius: 3%;
     position: relative;
     margin-top: 4%;
-    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -66,17 +64,6 @@ textarea:focus {
   background-color: #1b4964;
 }
 
-#output h1 {
-  font-size: 140%;
-  font-weight: lighter;
-  text-align: center;
-  margin-top: 2%;
-  margin-left: -2%;
-  padding: 3%;
-  width: 100%;
-  color: black;
-}
-
 #result {
   font-size: 400%;
   font-weight: lighter;
@@ -85,7 +72,7 @@ textarea:focus {
   text-align: center;
   margin-left: -5%;
   margin-right: -5%;
-  margin-top: 2%;
+  margin-top: 4%;
   padding: 5%;
   bottom: 0;
   width: 100%;
@@ -140,4 +127,13 @@ textarea:focus {
 
 .hide {
   visibility: hidden;
+}
+
+.remove {
+  display: none;
+}
+
+.top {
+  margin-top: 0;
+  background-color: red;
 }

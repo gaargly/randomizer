@@ -23,6 +23,10 @@
       document.getElementById('randomize').classList.remove("show");
       document.getElementById('randomize').classList.add("remove");
 
+      //moves result to top of page
+      document.getElementById('the_chosen_one').classList.remove("result");
+      document.getElementById('the_chosen_one').classList.add("result_randomized");
+
       //shows other magical stuff beneath start button i.e. progressive disclosure
       document.getElementById('message').classList.remove("hide");
       document.getElementById('message').classList.add("show");
@@ -32,6 +36,8 @@
 
       document.getElementById('timer').classList.remove("hide");
       document.getElementById('timer').classList.add("show");
+
+
 
       // Gets user input
       var text = document.getElementById('input').value;
@@ -43,7 +49,7 @@
       var choice = text_array[Math.floor(Math.random()*text_array.length)];
 
       // Writes array to result div
-      document.getElementById('result').innerHTML = choice;
+      document.getElementById('the_chosen_one').innerHTML = choice;
 
       // Apparently some sort of best practice?
       return false;

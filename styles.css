@@ -67,8 +67,8 @@ textarea:focus {
 .result {
   font-size: 200%;
   font-weight: lighter;
-  background-color: black;
-  color: white;
+  /*background-color: black;*/
+  /*color: white;*/
   text-align: center;
   margin-left: -5%;
   margin-right: -5%;
